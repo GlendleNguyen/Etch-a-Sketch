@@ -5,3 +5,29 @@ body {
 h1 {
     text-align: center;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    position: relative;
+    top: 30px;
+    outline: 2px solid #000;
+    height: 600px;
+    width: 600px;
+    margin: auto; 
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+}
+
+.cell {
+    border: 1px solid gray;
+    min-width: 10px;
+    min-height: 20px;
+    color: white; 
+  }
+
