@@ -1,4 +1,5 @@
 const MINIMUMSIZE = 16;
+let currentColor = "black"
 
 const board = document.getElementById("container");
 
@@ -12,7 +13,7 @@ function createBoard(size) {
 }
 
 function updateCell(e) {
-    e.target.style.backgroundColor = "black";
+    e.target.style.backgroundColor = currentColor;
 }
 
 function reset() {
