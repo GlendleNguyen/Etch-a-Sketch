@@ -15,6 +15,12 @@ function updateCell(e) {
     e.target.style.backgroundColor = "black";
 }
 
+function reset() {
+    let cell = document.querySelectorAll(".cell")
+    cell.forEach(cell => cell.remove());
+    createBoard(MINIMUMSIZE)
+}
+
 createBoard(MINIMUMSIZE);
 
 
