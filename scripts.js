@@ -5,12 +5,12 @@ let currentSize = 16;
 
 
 const board = document.getElementById("container");
-const colorPicker = document.querySelector('#colorSelect'); 
+const colorPicker = document.querySelector('#colorSelect');
 const slider = document.getElementById("slider");
 
 // generate cells for the grid and add to the board container
 function createBoard(size) {
-    for (let i = 0; i < size*size; i++) {
+    for (let i = 0; i < size * size; i++) {
         let cell = document.createElement('div');
         cell.addEventListener("mouseover", updateCell);
         cell.classList.add("cell");
@@ -34,16 +34,17 @@ function reset() {
 slider.addEventListener('change', changeSize)
 
 function changeSize() {
-    currentSize = this.value; 
-    board.style.gridTemplateColumns = "repeat(${currentSize}, auto-fit)"
-    board.style.gridTemplateRows = "repeat(${currentSize}, auto-fit)"
+    currentSize = this.value;
+    board.style.gridTemplateColumns = `repeat(${currentSize}, 1fr)`
+    board.style.gridTemplateRows = `repeat(${currentSize}, 1fr)`
+    reset()
 }
 
 // functions to change the color palette
 colorPicker.addEventListener('change', changeColor);
 
 function changeColor() {
-    currentColor = this.value; 
+    currentColor = this.value;
 }
 
 // initial board state creation

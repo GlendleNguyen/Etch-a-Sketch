@@ -15,10 +15,10 @@ body {
 #container {
     top: 30px;
     outline: 2px solid #000;
-    height: 600px;
-    width: 600px;
+    height: 860px;
+    width: 860px;
     margin: auto; 
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
 }
