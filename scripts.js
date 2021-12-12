@@ -1,8 +1,6 @@
 const MINIMUMSIZE = 16;
-const gridcss = "2fr"
 let currentColor = "black";
 let currentSize = 16;
-
 
 const board = document.getElementById("container");
 const colorPicker = document.querySelector('#colorSelect');
