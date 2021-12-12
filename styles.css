@@ -31,6 +31,13 @@ body {
   }
 
 #reset {
+    position: relative; 
     margin-top: 50px; 
+    margin-left: 100px;
+    margin-right: 100px; 
+
 }
 
+#colorSelect {
+    margin-right: 95px; 
+}
